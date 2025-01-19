@@ -110,6 +110,7 @@ p {
 .menu-nav {
     display: inline;
     /* padding: 24px 0; */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-nav:not(:last-child) {
     margin-right: 40px;
@@ -179,9 +180,13 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1440рх;
+    /* max-width: 1440рх; */
     text-align: center;
     padding: 188px 0;
+}
+
+.first {
+    max-width: 1440рх;
 }
 
 .head-title{
@@ -211,12 +216,12 @@ p {
     min-width: 169px;
     height: 56px;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-page-btn:hover,
 .main-page-btn:focus {
     background-color: #404bbf;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*   OPPORTUNITIES   */
@@ -329,9 +334,7 @@ p {
     background-color: #4d5ae5;
 }
 
-.soc-link {
-    width: 40px;
-    height: 40px;
+.soc-link .link{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -376,11 +379,11 @@ p {
 
 .portfolio-card-cont {
     width: 360px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card-cont:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-img {
@@ -400,6 +403,7 @@ p {
     color: #f4f4fd;
     padding: 40px 32px;
     background-color: #4d5ae5;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card-cont:hover .overlay,
@@ -409,8 +413,6 @@ p {
     width: 100%;
     height: 100%;
     transform: translateY(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-dscr {
@@ -461,11 +463,11 @@ p {
     font-weight: 500;
     color: #fff;
     margin-bottom: 16px;
-    gap: 16px;
 }
 
 .social-links-ftr {
     justify-content: flex-start;
+    gap: 16px;
 }
 
 .social-links-ftr .link:hover,
