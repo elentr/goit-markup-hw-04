@@ -309,7 +309,7 @@ p {
 .card-dscr {
     text-align: center;
     line-height: 1.5;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .social-links,
